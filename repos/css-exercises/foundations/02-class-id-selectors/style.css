@@ -1,0 +1,20 @@
+.rando{
+    font-size: 32px;
+    background-color: palevioletred;
+    font-weight: 100;
+}
+
+.rando.cooler{
+    font-size: 40px;
+}
+
+#id1{
+    color:blue;
+    font-size: 50px;
+}
+
+#id2{
+    background-color: greenyellow;
+    font-size: 38px;
+    font-weight: 800;
+}

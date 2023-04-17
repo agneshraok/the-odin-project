@@ -1,0 +1,145 @@
+/*
+*{
+    border: 1px solid red;
+}
+*/
+
+div.justify-center{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+div.nav-section{
+    background-color: #1F2937;
+}
+
+nav{
+    display: flex;
+    color: white;
+    padding-top: 10px;
+}
+
+nav>.logo{
+    flex:1;
+    font-size: 24px;
+    font-weight:bolder;
+    color: #F9FAF8;
+}
+
+nav > .link1{
+    font-size: 18px;
+    margin-right: 9px;
+    color: #e5e7eb;
+}
+
+div.web-info{
+    background-color: #1F2937;
+    color: white;
+}
+
+.web-info-container{
+    display: flex;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+
+.web-info-container>.left{
+    width: 370px;
+    flex-direction: column;
+    margin-top: 1%;
+    margin-bottom: 2%;
+}
+
+.web-info-container>.left > button{
+    background-color: blue;
+    color:white;
+    font-weight: bolder;
+    border-radius: 5px;
+}
+
+.web-info-container>.right{
+    flex: 1;
+    padding : 70px;
+    background-color: gray;
+    margin-left: 20px;
+    font-size: small;
+    margin-top: 50px;
+    margin-bottom: 10px
+}
+
+.random-info-container{
+    display: flex;
+    flex-direction: column;
+    padding: 60px;
+}
+
+.random-info-container> h3{
+    align-self: center;
+}
+.random-info-container > .items{
+    display: flex;
+    justify-content: space-around;
+}
+
+.random-info-container > .items > .item{
+    display: flex;
+    flex-direction: column;
+}
+
+.random-info-container > .items > .item > .image{
+    border: 3px solid blue;
+    width: 100px;
+    height:120px;
+    border-radius: 15px;
+}
+
+.random-info-container > .items > .item > .subtext{
+    padding: 5px;
+    align-self: center;
+    font-size: 10px;
+}
+
+.quote{
+    background-color: #e5e7eb;
+}
+
+.quote-container{
+    padding: 10%;
+    color: #1F2937;
+}
+
+.quote-container> h6{
+    align-self:flex-end;
+}
+
+.call-to-action-container{
+    display: flex;
+    background-color: #3882F6;
+    color: white;
+    padding: 10px;
+    margin: 50px;
+    border-radius: 10px;
+    justify-content: center;
+}
+
+.call-to-action-container > button{
+    color: white;
+    background-color: #3882F6;
+    border: 2px solid white;
+    border-radius: 6px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    width: 100px;
+    font-weight: bold;
+}
+
+.call-to-action-container > .left{
+    align-content: center;
+}
+
+footer{
+    background-color: #1F2937;
+    color:white;
+    padding: 5px;
+}

@@ -1,0 +1,19 @@
+h1{
+    display: block;
+    margin-bottom: 50px;
+}
+
+*{
+    border: 2px solid red;
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+}
+
+div{
+    padding: 5px;
+    flex:1;
+}
+
