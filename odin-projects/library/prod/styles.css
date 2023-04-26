@@ -1,3 +1,7 @@
+* {
+  border: 1px solid red;
+}
+
 nav {
   padding: 20px;
   display: flex;
@@ -21,17 +25,16 @@ button {
   border-radius: 5px;
   border: 0px solid white;
   background-color: white;
-  padding: 5px;
+  padding: 10px;
   font-family: "Poppins", sans-serif;
   font-size: 20px;
   font-weight: 500;
-  margin-top: 16px;
 }
 
 #container {
   background-color: #f0eef1;
+  padding: 20px;
   display: flex;
-  flex-direction: column;
-  flex: 1;
-  height: 500px;
+  flex-wrap: wrap;
+  gap: 50px;
 }
