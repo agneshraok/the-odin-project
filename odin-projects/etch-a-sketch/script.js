@@ -6,31 +6,35 @@ const sketchpad = document.querySelector("#sketchpad");
 
 const btn = document.querySelector("#set-size");
 
-//logic
-let numCells;
-
 function cleanSketchPad() {
   //clean the sketch pad (prev history)
   sketchpad.innerHTML = "";
 }
 
-btn.addEventListener("click", () => {
-  cleanSketchPad();
-  //take input from user, check for max condition
-  numCells = prompt("Enter the number of cells:");
+function getNumCells() {
+  //take number of cells from user, check for max condition
+  let numCells = prompt("Enter the number of cells:");
 
   if (numCells >= 0 && numCells <= 100) {
     numCells = numCells;
   } else if (numCells > 100) {
     numCells = 100;
   }
+  console.log(`number of cells inputted by user: ${numCells}`);
+  return numCells;
+}
 
-  //calculate the width and height of each cell
+function calcSize(numCells) {
+  //calculate the width and height of each cell based on the number of cells user has inputed
   const sizeOfSketchPad = window.getComputedStyle(
     document.querySelector("#sketchpad")
   ).height;
   const sizeOfCell = sizeOfSketchPad / numCells;
+  console.log(`size of each cell calculated: ${sizeOfCell}`);
+  return sizeOfCell;
+}
 
+function drawCells(numCells, sizeOfCell) {
   //draw the cells
   for (let i = 0; i < numCells; i++) {
     const row = document.createElement("div");
@@ -44,4 +48,11 @@ btn.addEventListener("click", () => {
       row.appendChild(cell);
     }
   }
+}
+
+btn.addEventListener("click", () => {
+  cleanSketchPad();
+  const numCells = getNumCells();
+  const sizeOfCell = calcSize();
+  drawCells(numCells, sizeOfCell);
 });
