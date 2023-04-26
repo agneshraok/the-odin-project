@@ -55,4 +55,14 @@ btn.addEventListener("click", () => {
   const numCells = getNumCells();
   const sizeOfCell = calcSize();
   drawCells(numCells, sizeOfCell);
+
+  //add color over hovering
+
+  const cells = document.querySelectorAll(".cell");
+
+  cells.forEach((cell) => {
+    cell.addEventListener("mouseover", () => {
+      cell.setAttribute("style", "background-color: black");
+    });
+  });
 });

@@ -1,11 +1,9 @@
-* {
-  border: 2px solid red;
-}
-
 #banner {
   display: flex;
   justify-content: center;
   padding: 20px;
+  font-size: 4rem;
+  font-family: "Shadows Into Light", cursive;
 }
 
 #container {
@@ -15,7 +13,14 @@
 
 #buttons {
   flex: 1;
-  padding: 50px;
+}
+
+#set-size {
+  padding: 20px;
+  margin-left: 100px;
+  background-color: chartreuse;
+  font-family: "Shadows Into Light", cursive;
+  font-size: 2rem;
 }
 
 #sketchpad {
@@ -23,7 +28,7 @@
   flex-direction: column;
   width: 1000px;
   height: 1000px;
-  background-color: aqua;
+  background-color: cadetblue;
 }
 
 .row {
