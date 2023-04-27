@@ -1,0 +1,86 @@
+html {
+  /*font-family: font-family: "Poppins", sans-serif;"DM Sans", sans-serif*/
+}
+
+body {
+  margin: 0;
+}
+
+#main-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+img {
+  max-width: 630px;
+}
+
+#right-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+#banner {
+  padding: 2%;
+  font-size: 1.5rem;
+  background-color: rgba(10, 61, 39, 0.417);
+  font-family: "Roboto Mono", monospace;
+  color: rgb(68, 66, 66);
+}
+
+#form-container {
+  display: flex;
+  justify-content: start;
+  gap: 15%;
+  padding: 2%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  font-size: 0.9rem;
+  font-weight: 550;
+  margin-top: 5%;
+  margin-bottom: 1%;
+}
+
+div.input-block {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-family: "Roboto Mono", monospace;
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+
+input {
+  border: 1px solid rgba(224, 221, 221, 0.977);
+  border-radius: 2px;
+  width: 130%;
+  height: 35px;
+  font-family: "Roboto Mono", monospace;
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+
+div#button-container {
+  padding: 2%;
+}
+
+button {
+  padding: 1.5%;
+  width: 8rem;
+  height: 3rem;
+  font-family: "Roboto Mono", monospace;
+  font-size: 1.5rem;
+  font-weight: 200;
+  background-color: rgba(10, 61, 39, 0.417);
+  color: rgb(68, 66, 66);
+  border: 0;
+  align-content: center;
+  border-radius: 4px;
+}
